@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipe Gojek - Aplikasi Layanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Halaman Login -->
+    <section id="login" class="login">
+        <h2>BURUAN MASUKIN EMAIL NYA YA NI</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>Belum punya akun? <a href="#" id="goToSignup">Daftar</a></p>
+        </form>
+    </section>
+
+    <!-- Halaman Daftar -->
+    <section id="signup" class="signup" style="display:none;">
+        <h2>Daftar Akun</h2>
+        <form id="signupForm">
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button type="submit">Daftar</button>
+            <p>Sudah punya akun? <a href="#" id="goToLogin">Login</a></p>
+        </form>
+    </section>
+
+    <!-- Halaman Beranda (Setelah Login) -->
+    <section id="dashboard" class="dashboard" style="display:none;">
+        <h2>Selamat Datang di Aplikasi Layanan</h2>
+        <button id="goToMap">Mulai Pesanan</button>
+        <button id="goToProfile">Profil Saya</button>
+    </section>
+
+    <!-- Halaman Peta -->
+    <section id="mapSection" class="map-section" style="display:none;">
+        <h2>Pilih Lokasi Pengiriman</h2>
+        <div id="map"></div>
+        <button id="confirmLocation">Pilih Lokasi</button>
+    </section>
+
+    <!-- Halaman Profil -->
+    <section id="profile" class="profile" style="display:none;">
+        <h2>Profil Pengguna</h2>
+        <p id="profileEmail">Email: </p>
+        <button id="logout">Logout</button>
+    </section>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
